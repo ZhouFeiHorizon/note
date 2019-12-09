@@ -1,0 +1,1465 @@
+{
+  "program": {
+    "fileInfos": {
+      "c:/users/administrator/appdata/roaming/npm/node_modules/typescript/lib/lib.d.ts": {
+        "version": "49ff9798f592c8b7e628fd881401e68810c1b3589ecd7a41b32b3c287374cde0",
+        "signature": "49ff9798f592c8b7e628fd881401e68810c1b3589ecd7a41b32b3c287374cde0"
+      },
+      "c:/users/administrator/appdata/roaming/npm/node_modules/typescript/lib/lib.es5.d.ts": {
+        "version": "fc43680ad3a1a4ec8c7b8d908af1ec9ddff87845346de5f02c735c9171fa98ea",
+        "signature": "fc43680ad3a1a4ec8c7b8d908af1ec9ddff87845346de5f02c735c9171fa98ea"
+      },
+      "c:/users/administrator/appdata/roaming/npm/node_modules/typescript/lib/lib.dom.d.ts": {
+        "version": "d93de5e8a7275cb9d47481410e13b3b1debb997e216490954b5d106e37e086de",
+        "signature": "d93de5e8a7275cb9d47481410e13b3b1debb997e216490954b5d106e37e086de"
+      },
+      "c:/users/administrator/appdata/roaming/npm/node_modules/typescript/lib/lib.webworker.importscripts.d.ts": {
+        "version": "fe4e59403e34c7ff747abe4ff6abbc7718229556d7c1a5b93473fb53156c913b",
+        "signature": "fe4e59403e34c7ff747abe4ff6abbc7718229556d7c1a5b93473fb53156c913b"
+      },
+      "c:/users/administrator/appdata/roaming/npm/node_modules/typescript/lib/lib.scripthost.d.ts": {
+        "version": "b9faa17292f17d2ad75e34fac77dd63a6403af1dba02d39cd0cbb9ffdf3de8b9",
+        "signature": "b9faa17292f17d2ad75e34fac77dd63a6403af1dba02d39cd0cbb9ffdf3de8b9"
+      },
+      "./js-utils.ts": {
+        "version": "3e0243d72719f2311a5761b97c9a872c242e2d838e774087316f1b23f48a1da2",
+        "signature": "e5369d3677e8830874a1250d660b326299058d2ae07688494435dd4c4fbec3f2"
+      }
+    },
+    "options": {
+      "target": 1,
+      "module": 1,
+      "composite": true,
+      "strict": true,
+      "esModuleInterop": true,
+      "forceConsistentCasingInFileNames": true,
+      "configFilePath": "./tsconfig.json"
+    },
+    "referencedMap": {},
+    "exportedModulesMap": {},
+    "semanticDiagnosticsPerFile": [
+      "c:/users/administrator/appdata/roaming/npm/node_modules/typescript/lib/lib.d.ts",
+      [
+        "./js-utils.ts",
+        [
+          {
+            "file": "./js-utils.ts",
+            "start": 75,
+            "length": 3,
+            "messageText": "Parameter 'obj' implicitly has an 'any' type.",
+            "category": 1,
+            "code": 7006
+          },
+          {
+            "file": "./js-utils.ts",
+            "start": 263,
+            "length": 3,
+            "messageText": "Parameter 'arr' implicitly has an 'any' type.",
+            "category": 1,
+            "code": 7006
+          },
+          {
+            "file": "./js-utils.ts",
+            "start": 268,
+            "length": 4,
+            "messageText": "Parameter 'item' implicitly has an 'any' type.",
+            "category": 1,
+            "code": 7006
+          },
+          {
+            "file": "./js-utils.ts",
+            "start": 463,
+            "length": 3,
+            "messageText": "Parameter 'obj' implicitly has an 'any' type.",
+            "category": 1,
+            "code": 7006
+          },
+          {
+            "file": "./js-utils.ts",
+            "start": 646,
+            "length": 3,
+            "messageText": "Parameter 'obj' implicitly has an 'any' type.",
+            "category": 1,
+            "code": 7006
+          },
+          {
+            "file": "./js-utils.ts",
+            "start": 791,
+            "length": 5,
+            "messageText": "Parameter 'value' implicitly has an 'any' type.",
+            "category": 1,
+            "code": 7006
+          },
+          {
+            "file": "./js-utils.ts",
+            "start": 977,
+            "length": 3,
+            "messageText": "Parameter 'obj' implicitly has an 'any' type.",
+            "category": 1,
+            "code": 7006
+          },
+          {
+            "file": "./js-utils.ts",
+            "start": 982,
+            "length": 3,
+            "messageText": "Parameter 'key' implicitly has an 'any' type.",
+            "category": 1,
+            "code": 7006
+          },
+          {
+            "file": "./js-utils.ts",
+            "start": 1417,
+            "length": 3,
+            "messageText": "Parameter 'ctx' implicitly has an 'any' type.",
+            "category": 1,
+            "code": 7006
+          },
+          {
+            "file": "./js-utils.ts",
+            "start": 1422,
+            "length": 8,
+            "messageText": "Parameter 'chainStr' implicitly has an 'any' type.",
+            "category": 1,
+            "code": 7006
+          },
+          {
+            "file": "./js-utils.ts",
+            "start": 1535,
+            "length": 4,
+            "messageText": "'this' implicitly has type 'any' because it does not have a type annotation.",
+            "category": 1,
+            "code": 2683
+          },
+          {
+            "file": "./js-utils.ts",
+            "start": 1985,
+            "length": 10,
+            "messageText": "Parameter 'oNamespace' implicitly has an 'any' type.",
+            "category": 1,
+            "code": 7006
+          },
+          {
+            "file": "./js-utils.ts",
+            "start": 1997,
+            "length": 8,
+            "messageText": "Parameter 'sPackage' implicitly has an 'any' type.",
+            "category": 1,
+            "code": 7006
+          },
+          {
+            "file": "./js-utils.ts",
+            "start": 2257,
+            "length": 1,
+            "messageText": "Parameter 'n' implicitly has an 'any' type.",
+            "category": 1,
+            "code": 7006
+          },
+          {
+            "file": "./js-utils.ts",
+            "start": 2657,
+            "length": 4,
+            "code": 2769,
+            "category": 1,
+            "messageText": {
+              "messageText": "No overload matches this call.",
+              "category": 1,
+              "code": 2769,
+              "next": [
+                {
+                  "messageText": "Overload 1 of 4, '(vd: VarDate): Date', gave the following error.",
+                  "category": 1,
+                  "code": 2772,
+                  "next": [
+                    {
+                      "messageText": "Argument of type 'Date' is not assignable to parameter of type 'VarDate'.",
+                      "category": 1,
+                      "code": 2345,
+                      "next": [
+                        {
+                          "messageText": "Property 'VarDate_typekey' is missing in type 'Date' but required in type 'VarDate'.",
+                          "category": 1,
+                          "code": 2741
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "messageText": "Overload 2 of 4, '(value: string | number): Date', gave the following error.",
+                  "category": 1,
+                  "code": 2772,
+                  "next": [
+                    {
+                      "messageText": "Argument of type 'Date' is not assignable to parameter of type 'string | number'.",
+                      "category": 1,
+                      "code": 2345,
+                      "next": [
+                        {
+                          "messageText": "Type 'Date' is not assignable to type 'number'.",
+                          "category": 1,
+                          "code": 2322
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            "relatedInformation": [
+              {
+                "file": "c:/users/administrator/appdata/roaming/npm/node_modules/typescript/lib/lib.scripthost.d.ts",
+                "start": 9621,
+                "length": 15,
+                "messageText": "'VarDate_typekey' is declared here.",
+                "category": 3,
+                "code": 2728
+              }
+            ]
+          },
+          {
+            "file": "./js-utils.ts",
+            "start": 3963,
+            "length": 8,
+            "code": 7053,
+            "category": 1,
+            "messageText": {
+              "messageText": "Element implicitly has an 'any' type because expression of type 'string' can't be used to index type '{ M: number; d: number; H: number; h: number; m: number; s: number; w: string; }'.",
+              "category": 1,
+              "code": 7053,
+              "next": [
+                {
+                  "messageText": "No index signature with a parameter of type 'string' was found on type '{ M: number; d: number; H: number; h: number; m: number; s: number; w: string; }'.",
+                  "category": 1,
+                  "code": 7054
+                }
+              ]
+            }
+          },
+          {
+            "file": "./js-utils.ts",
+            "start": 3975,
+            "length": 8,
+            "code": 7053,
+            "category": 1,
+            "messageText": {
+              "messageText": "Element implicitly has an 'any' type because expression of type 'string' can't be used to index type '{ M: number; d: number; H: number; h: number; m: number; s: number; w: string; }'.",
+              "category": 1,
+              "code": 7053,
+              "next": [
+                {
+                  "messageText": "No index signature with a parameter of type 'string' was found on type '{ M: number; d: number; H: number; h: number; m: number; s: number; w: string; }'.",
+                  "category": 1,
+                  "code": 7054
+                }
+              ]
+            }
+          },
+          {
+            "file": "./js-utils.ts",
+            "start": 4035,
+            "length": 1,
+            "messageText": "Parameter 'v' implicitly has an 'any' type.",
+            "category": 1,
+            "code": 7006
+          },
+          {
+            "file": "./js-utils.ts",
+            "start": 4260,
+            "length": 4,
+            "messageText": "Parameter 'sRGB' implicitly has an 'any' type.",
+            "category": 1,
+            "code": 7006
+          },
+          {
+            "file": "./js-utils.ts",
+            "start": 4287,
+            "length": 1,
+            "messageText": "Parameter 'n' implicitly has an 'any' type.",
+            "category": 1,
+            "code": 7006
+          },
+          {
+            "file": "./js-utils.ts",
+            "start": 4336,
+            "length": 1,
+            "messageText": "Parameter 'n' implicitly has an 'any' type.",
+            "category": 1,
+            "code": 7006
+          },
+          {
+            "file": "./js-utils.ts",
+            "start": 4505,
+            "length": 3,
+            "messageText": "Parameter 'all' implicitly has an 'any' type.",
+            "category": 1,
+            "code": 7006
+          },
+          {
+            "file": "./js-utils.ts",
+            "start": 4510,
+            "length": 1,
+            "messageText": "Parameter 'r' implicitly has an 'any' type.",
+            "category": 1,
+            "code": 7006
+          },
+          {
+            "file": "./js-utils.ts",
+            "start": 4513,
+            "length": 1,
+            "messageText": "Parameter 'g' implicitly has an 'any' type.",
+            "category": 1,
+            "code": 7006
+          },
+          {
+            "file": "./js-utils.ts",
+            "start": 4516,
+            "length": 1,
+            "messageText": "Parameter 'b' implicitly has an 'any' type.",
+            "category": 1,
+            "code": 7006
+          },
+          {
+            "file": "./js-utils.ts",
+            "start": 4815,
+            "length": 4,
+            "messageText": "Parameter 'sHex' implicitly has an 'any' type.",
+            "category": 1,
+            "code": 7006
+          },
+          {
+            "file": "./js-utils.ts",
+            "start": 4862,
+            "length": 1,
+            "messageText": "Parameter 'n' implicitly has an 'any' type.",
+            "category": 1,
+            "code": 7006
+          },
+          {
+            "file": "./js-utils.ts",
+            "start": 5692,
+            "length": 3,
+            "messageText": "Parameter 'str' implicitly has an 'any' type.",
+            "category": 1,
+            "code": 7006
+          },
+          {
+            "file": "./js-utils.ts",
+            "start": 5720,
+            "length": 10,
+            "messageText": "Cannot find name 'camelizeRE'. Did you mean 'camelize'?",
+            "category": 1,
+            "code": 2552,
+            "relatedInformation": [
+              {
+                "file": "./js-utils.ts",
+                "start": 5683,
+                "length": 8,
+                "messageText": "'camelize' is declared here.",
+                "category": 3,
+                "code": 2728
+              }
+            ]
+          },
+          {
+            "file": "./js-utils.ts",
+            "start": 5742,
+            "length": 1,
+            "messageText": "Parameter '_' implicitly has an 'any' type.",
+            "category": 1,
+            "code": 7006
+          },
+          {
+            "file": "./js-utils.ts",
+            "start": 5745,
+            "length": 1,
+            "messageText": "Parameter 'c' implicitly has an 'any' type.",
+            "category": 1,
+            "code": 7006
+          },
+          {
+            "file": "./js-utils.ts",
+            "start": 5923,
+            "length": 3,
+            "messageText": "Parameter 'str' implicitly has an 'any' type.",
+            "category": 1,
+            "code": 7006
+          },
+          {
+            "file": "./js-utils.ts",
+            "start": 5952,
+            "length": 11,
+            "messageText": "Cannot find name 'hyphenateRE'. Did you mean 'hyphenate'?",
+            "category": 1,
+            "code": 2552,
+            "relatedInformation": [
+              {
+                "file": "./js-utils.ts",
+                "start": 5913,
+                "length": 9,
+                "messageText": "'hyphenate' is declared here.",
+                "category": 3,
+                "code": 2728
+              }
+            ]
+          },
+          {
+            "file": "./js-utils.ts",
+            "start": 6056,
+            "length": 3,
+            "messageText": "Parameter 'str' implicitly has an 'any' type.",
+            "category": 1,
+            "code": 7006
+          },
+          {
+            "file": "./js-utils.ts",
+            "start": 6203,
+            "length": 8,
+            "messageText": "Parameter 'oldValue' implicitly has an 'any' type.",
+            "category": 1,
+            "code": 7006
+          },
+          {
+            "file": "./js-utils.ts",
+            "start": 6213,
+            "length": 5,
+            "messageText": "Parameter 'value' implicitly has an 'any' type.",
+            "category": 1,
+            "code": 7006
+          },
+          {
+            "file": "./js-utils.ts",
+            "start": 6541,
+            "length": 4,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'uniq' does not exist on type 'any[]'."
+          },
+          {
+            "file": "./js-utils.ts",
+            "start": 6653,
+            "length": 4,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'from' does not exist on type 'ArrayConstructor'."
+          },
+          {
+            "file": "./js-utils.ts",
+            "start": 6661,
+            "length": 3,
+            "messageText": "Cannot find name 'Set'. Do you need to change your target library? Try changing the `lib` compiler option to es2015 or later.",
+            "category": 1,
+            "code": 2583
+          },
+          {
+            "file": "./js-utils.ts",
+            "start": 6686,
+            "length": 4,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'from' does not exist on type 'ArrayConstructor'."
+          },
+          {
+            "file": "./js-utils.ts",
+            "start": 6695,
+            "length": 3,
+            "messageText": "Cannot find name 'Set'. Do you need to change your target library? Try changing the `lib` compiler option to es2015 or later.",
+            "category": 1,
+            "code": 2583
+          },
+          {
+            "file": "./js-utils.ts",
+            "start": 7015,
+            "length": 3,
+            "messageText": "Parameter 'arr' implicitly has an 'any' type.",
+            "category": 1,
+            "code": 7006
+          },
+          {
+            "file": "./js-utils.ts",
+            "start": 7020,
+            "length": 2,
+            "messageText": "Parameter 'cb' implicitly has an 'any' type.",
+            "category": 1,
+            "code": 7006
+          },
+          {
+            "file": "./js-utils.ts",
+            "start": 7024,
+            "length": 3,
+            "messageText": "Parameter 'ctx' implicitly has an 'any' type.",
+            "category": 1,
+            "code": 7006
+          },
+          {
+            "file": "./js-utils.ts",
+            "start": 7296,
+            "length": 3,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'max' does not exist on type 'any[]'."
+          },
+          {
+            "file": "./js-utils.ts",
+            "start": 7385,
+            "length": 3,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'min' does not exist on type 'any[]'."
+          },
+          {
+            "file": "./js-utils.ts",
+            "start": 7443,
+            "length": 4,
+            "code": 2345,
+            "category": 1,
+            "messageText": {
+              "messageText": "Argument of type 'any[]' is not assignable to parameter of type '[unknown, any[]]'.",
+              "category": 1,
+              "code": 2345,
+              "next": [
+                {
+                  "messageText": "Type 'any[]' is missing the following properties from type '[unknown, any[]]': 0, 1",
+                  "category": 1,
+                  "code": 2739
+                }
+              ]
+            }
+          },
+          {
+            "file": "./js-utils.ts",
+            "start": 7547,
+            "length": 4,
+            "messageText": "Parameter 'list' implicitly has an 'any' type.",
+            "category": 1,
+            "code": 7006
+          },
+          {
+            "file": "./js-utils.ts",
+            "start": 7553,
+            "length": 5,
+            "messageText": "Parameter 'start' implicitly has an 'any' type.",
+            "category": 1,
+            "code": 7006
+          },
+          {
+            "file": "./js-utils.ts",
+            "start": 7569,
+            "length": 5,
+            "messageText": "Subsequent variable declarations must have the same type.  Variable 'start' must be of type 'any', but here has type 'string | number'.",
+            "category": 1,
+            "code": 2403,
+            "relatedInformation": [
+              {
+                "file": "./js-utils.ts",
+                "start": 7553,
+                "length": 5,
+                "messageText": "'start' was also declared here.",
+                "category": 3,
+                "code": 6203
+              }
+            ]
+          },
+          {
+            "file": "./js-utils.ts",
+            "start": 7829,
+            "length": 2,
+            "messageText": "Parameter 'to' implicitly has an 'any' type.",
+            "category": 1,
+            "code": 7006
+          },
+          {
+            "file": "./js-utils.ts",
+            "start": 7833,
+            "length": 5,
+            "messageText": "Parameter '_from' implicitly has an 'any' type.",
+            "category": 1,
+            "code": 7006
+          },
+          {
+            "file": "./js-utils.ts",
+            "start": 8004,
+            "length": 3,
+            "messageText": "Parameter 'arr' implicitly has an 'any' type.",
+            "category": 1,
+            "code": 7006
+          },
+          {
+            "file": "./js-utils.ts",
+            "start": 8357,
+            "length": 2,
+            "messageText": "Parameter 'fn' implicitly has an 'any' type.",
+            "category": 1,
+            "code": 7006
+          },
+          {
+            "file": "./js-utils.ts",
+            "start": 8466,
+            "length": 4,
+            "messageText": "'this' implicitly has type 'any' because it does not have a type annotation.",
+            "category": 1,
+            "code": 2683
+          },
+          {
+            "file": "./js-utils.ts",
+            "start": 8656,
+            "length": 3,
+            "messageText": "Parameter 'val' implicitly has an 'any' type.",
+            "category": 1,
+            "code": 7006
+          },
+          {
+            "file": "./js-utils.ts",
+            "start": 8947,
+            "length": 3,
+            "messageText": "Parameter 'obj' implicitly has an 'any' type.",
+            "category": 1,
+            "code": 7006
+          },
+          {
+            "file": "./js-utils.ts",
+            "start": 9218,
+            "length": 3,
+            "messageText": "Parameter 'val' implicitly has an 'any' type.",
+            "category": 1,
+            "code": 7006
+          },
+          {
+            "file": "./js-utils.ts",
+            "start": 9378,
+            "length": 3,
+            "messageText": "Parameter 'num' implicitly has an 'any' type.",
+            "category": 1,
+            "code": 7006
+          },
+          {
+            "file": "./js-utils.ts",
+            "start": 9527,
+            "length": 1,
+            "messageText": "Cannot find name 'k'.",
+            "category": 1,
+            "code": 2304
+          },
+          {
+            "file": "./js-utils.ts",
+            "start": 9539,
+            "length": 2,
+            "messageText": "Cannot find name 're'.",
+            "category": 1,
+            "code": 2304
+          },
+          {
+            "file": "./js-utils.ts",
+            "start": 9564,
+            "length": 1,
+            "messageText": "Cannot find name 'a'.",
+            "category": 1,
+            "code": 2304
+          },
+          {
+            "file": "./js-utils.ts",
+            "start": 9609,
+            "length": 1,
+            "messageText": "Cannot find name 'k'.",
+            "category": 1,
+            "code": 2304
+          },
+          {
+            "file": "./js-utils.ts",
+            "start": 9638,
+            "length": 2,
+            "messageText": "Cannot find name 're'.",
+            "category": 1,
+            "code": 2304
+          },
+          {
+            "file": "./js-utils.ts",
+            "start": 9651,
+            "length": 2,
+            "messageText": "Cannot find name 're'.",
+            "category": 1,
+            "code": 2304
+          },
+          {
+            "file": "./js-utils.ts",
+            "start": 9725,
+            "length": 1,
+            "messageText": "Cannot find name 'a'.",
+            "category": 1,
+            "code": 2304
+          },
+          {
+            "file": "./js-utils.ts",
+            "start": 9771,
+            "length": 1,
+            "messageText": "Cannot find name 'a'.",
+            "category": 1,
+            "code": 2304
+          },
+          {
+            "file": "./js-utils.ts",
+            "start": 9789,
+            "length": 2,
+            "messageText": "Cannot find name 're'.",
+            "category": 1,
+            "code": 2304
+          },
+          {
+            "file": "./js-utils.ts",
+            "start": 9802,
+            "length": 2,
+            "messageText": "Cannot find name 're'.",
+            "category": 1,
+            "code": 2304
+          },
+          {
+            "file": "./js-utils.ts",
+            "start": 9846,
+            "length": 2,
+            "messageText": "Cannot find name 're'.",
+            "category": 1,
+            "code": 2304
+          },
+          {
+            "file": "./js-utils.ts",
+            "start": 9859,
+            "length": 2,
+            "messageText": "Cannot find name 're'.",
+            "category": 1,
+            "code": 2304
+          },
+          {
+            "file": "./js-utils.ts",
+            "start": 9896,
+            "length": 1,
+            "messageText": "Cannot find name 'k'.",
+            "category": 1,
+            "code": 2304
+          },
+          {
+            "file": "./js-utils.ts",
+            "start": 9935,
+            "length": 1,
+            "messageText": "Cannot find name 'k'.",
+            "category": 1,
+            "code": 2304
+          },
+          {
+            "file": "./js-utils.ts",
+            "start": 9949,
+            "length": 1,
+            "messageText": "Cannot find name 'a'.",
+            "category": 1,
+            "code": 2304
+          },
+          {
+            "file": "./js-utils.ts",
+            "start": 9976,
+            "length": 1,
+            "messageText": "Cannot find name 'a'.",
+            "category": 1,
+            "code": 2304
+          },
+          {
+            "file": "./js-utils.ts",
+            "start": 10008,
+            "length": 2,
+            "messageText": "Cannot find name 're'.",
+            "category": 1,
+            "code": 2304
+          },
+          {
+            "file": "./js-utils.ts",
+            "start": 10021,
+            "length": 2,
+            "messageText": "Cannot find name 're'.",
+            "category": 1,
+            "code": 2304
+          },
+          {
+            "file": "./js-utils.ts",
+            "start": 10034,
+            "length": 1,
+            "messageText": "Cannot find name 'a'.",
+            "category": 1,
+            "code": 2304
+          },
+          {
+            "file": "./js-utils.ts",
+            "start": 10062,
+            "length": 2,
+            "messageText": "Cannot find name 're'.",
+            "category": 1,
+            "code": 2304
+          },
+          {
+            "file": "./js-utils.ts",
+            "start": 10070,
+            "length": 1,
+            "messageText": "Cannot find name 'a'.",
+            "category": 1,
+            "code": 2304
+          },
+          {
+            "file": "./js-utils.ts",
+            "start": 10091,
+            "length": 1,
+            "messageText": "Cannot find name 'k'.",
+            "category": 1,
+            "code": 2304
+          },
+          {
+            "file": "./js-utils.ts",
+            "start": 10100,
+            "length": 2,
+            "messageText": "Cannot find name 're'.",
+            "category": 1,
+            "code": 2304
+          },
+          {
+            "file": "./js-utils.ts",
+            "start": 10109,
+            "length": 1,
+            "messageText": "Cannot find name 'k'.",
+            "category": 1,
+            "code": 2304
+          },
+          {
+            "file": "./js-utils.ts",
+            "start": 10128,
+            "length": 1,
+            "messageText": "Cannot find name 'a'.",
+            "category": 1,
+            "code": 2304
+          },
+          {
+            "file": "./js-utils.ts",
+            "start": 10171,
+            "length": 2,
+            "messageText": "Cannot find name 're'.",
+            "category": 1,
+            "code": 2304
+          },
+          {
+            "file": "./js-utils.ts",
+            "start": 10209,
+            "length": 1,
+            "messageText": "Cannot find name 'a'.",
+            "category": 1,
+            "code": 2304
+          },
+          {
+            "file": "./js-utils.ts",
+            "start": 10234,
+            "length": 2,
+            "messageText": "Cannot find name 're'.",
+            "category": 1,
+            "code": 2304
+          },
+          {
+            "file": "./js-utils.ts",
+            "start": 10243,
+            "length": 1,
+            "messageText": "Cannot find name 'a'.",
+            "category": 1,
+            "code": 2304
+          },
+          {
+            "file": "./js-utils.ts",
+            "start": 10272,
+            "length": 2,
+            "messageText": "Cannot find name 're'.",
+            "category": 1,
+            "code": 2304
+          },
+          {
+            "file": "./js-utils.ts",
+            "start": 10289,
+            "length": 2,
+            "messageText": "Cannot find name 're'.",
+            "category": 1,
+            "code": 2304
+          },
+          {
+            "file": "./js-utils.ts",
+            "start": 10306,
+            "length": 2,
+            "messageText": "Cannot find name 're'.",
+            "category": 1,
+            "code": 2304
+          },
+          {
+            "file": "./js-utils.ts",
+            "start": 10324,
+            "length": 2,
+            "messageText": "Cannot find name 're'.",
+            "category": 1,
+            "code": 2304
+          },
+          {
+            "file": "./js-utils.ts",
+            "start": 10345,
+            "length": 2,
+            "messageText": "Cannot find name 're'.",
+            "category": 1,
+            "code": 2304
+          },
+          {
+            "file": "./js-utils.ts",
+            "start": 10350,
+            "length": 2,
+            "messageText": "Cannot find name 're'.",
+            "category": 1,
+            "code": 2304
+          },
+          {
+            "file": "./js-utils.ts",
+            "start": 10381,
+            "length": 2,
+            "messageText": "Cannot find name 're'.",
+            "category": 1,
+            "code": 2304
+          },
+          {
+            "file": "./js-utils.ts",
+            "start": 10722,
+            "length": 4,
+            "messageText": "Parameter 'sUrl' implicitly has an 'any' type.",
+            "category": 1,
+            "code": 7006
+          },
+          {
+            "file": "./js-utils.ts",
+            "start": 10728,
+            "length": 4,
+            "messageText": "Parameter 'sKey' implicitly has an 'any' type.",
+            "category": 1,
+            "code": 7006
+          },
+          {
+            "file": "./js-utils.ts",
+            "start": 10768,
+            "length": 3,
+            "messageText": "Cannot find name 'reg'.",
+            "category": 1,
+            "code": 2304
+          },
+          {
+            "file": "./js-utils.ts",
+            "start": 10783,
+            "length": 3,
+            "messageText": "Parameter 'all' implicitly has an 'any' type.",
+            "category": 1,
+            "code": 7006
+          },
+          {
+            "file": "./js-utils.ts",
+            "start": 10788,
+            "length": 3,
+            "messageText": "Parameter 'key' implicitly has an 'any' type.",
+            "category": 1,
+            "code": 7006
+          },
+          {
+            "file": "./js-utils.ts",
+            "start": 10793,
+            "length": 3,
+            "messageText": "Parameter 'val' implicitly has an 'any' type.",
+            "category": 1,
+            "code": 7006
+          },
+          {
+            "file": "./js-utils.ts",
+            "start": 10809,
+            "length": 8,
+            "code": 7053,
+            "category": 1,
+            "messageText": "Element implicitly has an 'any' type because expression of type 'any' can't be used to index type '{}'."
+          },
+          {
+            "file": "./js-utils.ts",
+            "start": 10848,
+            "length": 8,
+            "code": 7053,
+            "category": 1,
+            "messageText": "Element implicitly has an 'any' type because expression of type 'any' can't be used to index type '{}'."
+          },
+          {
+            "file": "./js-utils.ts",
+            "start": 10893,
+            "length": 8,
+            "code": 7053,
+            "category": 1,
+            "messageText": "Element implicitly has an 'any' type because expression of type 'any' can't be used to index type '{}'."
+          },
+          {
+            "file": "./js-utils.ts",
+            "start": 10920,
+            "length": 8,
+            "code": 7053,
+            "category": 1,
+            "messageText": "Element implicitly has an 'any' type because expression of type 'any' can't be used to index type '{}'."
+          },
+          {
+            "file": "./js-utils.ts",
+            "start": 10967,
+            "length": 8,
+            "code": 7053,
+            "category": 1,
+            "messageText": "Element implicitly has an 'any' type because expression of type 'any' can't be used to index type '{}'."
+          },
+          {
+            "file": "./js-utils.ts",
+            "start": 10988,
+            "length": 8,
+            "code": 7053,
+            "category": 1,
+            "messageText": "Element implicitly has an 'any' type because expression of type 'any' can't be used to index type '{}'."
+          },
+          {
+            "file": "./js-utils.ts",
+            "start": 11059,
+            "length": 9,
+            "code": 7053,
+            "category": 1,
+            "messageText": "Element implicitly has an 'any' type because expression of type 'any' can't be used to index type '{}'."
+          },
+          {
+            "file": "./js-utils.ts",
+            "start": 11122,
+            "length": 4,
+            "messageText": "Parameter 'sUrl' implicitly has an 'any' type.",
+            "category": 1,
+            "code": 7006
+          },
+          {
+            "file": "./js-utils.ts",
+            "start": 11180,
+            "length": 3,
+            "messageText": "Cannot find name 'reg'.",
+            "category": 1,
+            "code": 2304
+          },
+          {
+            "file": "./js-utils.ts",
+            "start": 11195,
+            "length": 3,
+            "messageText": "Parameter 'all' implicitly has an 'any' type.",
+            "category": 1,
+            "code": 7006
+          },
+          {
+            "file": "./js-utils.ts",
+            "start": 11200,
+            "length": 3,
+            "messageText": "Parameter 'key' implicitly has an 'any' type.",
+            "category": 1,
+            "code": 7006
+          },
+          {
+            "file": "./js-utils.ts",
+            "start": 11205,
+            "length": 3,
+            "messageText": "Parameter 'val' implicitly has an 'any' type.",
+            "category": 1,
+            "code": 7006
+          },
+          {
+            "file": "./js-utils.ts",
+            "start": 11217,
+            "length": 8,
+            "code": 7053,
+            "category": 1,
+            "messageText": "Element implicitly has an 'any' type because expression of type 'any' can't be used to index type '{}'."
+          },
+          {
+            "file": "./js-utils.ts",
+            "start": 11320,
+            "length": 3,
+            "messageText": "Parameter 'str' implicitly has an 'any' type.",
+            "category": 1,
+            "code": 7006
+          },
+          {
+            "file": "./js-utils.ts",
+            "start": 11518,
+            "length": 3,
+            "messageText": "Parameter 'str' implicitly has an 'any' type.",
+            "category": 1,
+            "code": 7006
+          },
+          {
+            "file": "./js-utils.ts",
+            "start": 11821,
+            "length": 4,
+            "messageText": "Parameter 'name' implicitly has an 'any' type.",
+            "category": 1,
+            "code": 7006
+          },
+          {
+            "file": "./js-utils.ts",
+            "start": 11827,
+            "length": 8,
+            "messageText": "Parameter 'storeKey' implicitly has an 'any' type.",
+            "category": 1,
+            "code": 7006
+          },
+          {
+            "file": "./js-utils.ts",
+            "start": 11837,
+            "length": 12,
+            "messageText": "Parameter 'defaultValue' implicitly has an 'any' type.",
+            "category": 1,
+            "code": 7006
+          },
+          {
+            "file": "./js-utils.ts",
+            "start": 11851,
+            "length": 4,
+            "messageText": "Parameter 'type' implicitly has an 'any' type.",
+            "category": 1,
+            "code": 7006
+          },
+          {
+            "file": "./js-utils.ts",
+            "start": 11885,
+            "length": 4,
+            "messageText": "'this' implicitly has type 'any' because it does not have a type annotation.",
+            "category": 1,
+            "code": 2683
+          },
+          {
+            "file": "./js-utils.ts",
+            "start": 11913,
+            "length": 4,
+            "messageText": "'this' implicitly has type 'any' because it does not have a type annotation.",
+            "category": 1,
+            "code": 2683
+          },
+          {
+            "file": "./js-utils.ts",
+            "start": 11951,
+            "length": 4,
+            "messageText": "'this' implicitly has type 'any' because it does not have a type annotation.",
+            "category": 1,
+            "code": 2683
+          },
+          {
+            "file": "./js-utils.ts",
+            "start": 12070,
+            "length": 4,
+            "messageText": "'this' implicitly has type 'any' because it does not have a type annotation.",
+            "category": 1,
+            "code": 2683
+          },
+          {
+            "file": "./js-utils.ts",
+            "start": 12333,
+            "length": 3,
+            "code": 2345,
+            "category": 1,
+            "messageText": {
+              "messageText": "Argument of type 'string | null' is not assignable to parameter of type 'string'.",
+              "category": 1,
+              "code": 2345,
+              "next": [
+                {
+                  "messageText": "Type 'null' is not assignable to type 'string'.",
+                  "category": 1,
+                  "code": 2322
+                }
+              ]
+            }
+          },
+          {
+            "file": "./js-utils.ts",
+            "start": 12460,
+            "length": 3,
+            "messageText": "Cannot find name 'val'.",
+            "category": 1,
+            "code": 2304
+          },
+          {
+            "file": "./js-utils.ts",
+            "start": 12487,
+            "length": 3,
+            "messageText": "Cannot find name 'val'.",
+            "category": 1,
+            "code": 2304
+          },
+          {
+            "file": "./js-utils.ts",
+            "start": 12508,
+            "length": 3,
+            "messageText": "Cannot find name 'val'.",
+            "category": 1,
+            "code": 2304
+          },
+          {
+            "file": "./js-utils.ts",
+            "start": 12607,
+            "length": 3,
+            "messageText": "Cannot find name 'val'.",
+            "category": 1,
+            "code": 2304
+          },
+          {
+            "file": "./js-utils.ts",
+            "start": 12673,
+            "length": 3,
+            "messageText": "Cannot find name 'val'.",
+            "category": 1,
+            "code": 2304
+          },
+          {
+            "file": "./js-utils.ts",
+            "start": 12706,
+            "length": 3,
+            "messageText": "Cannot find name 'val'.",
+            "category": 1,
+            "code": 2304
+          },
+          {
+            "file": "./js-utils.ts",
+            "start": 12719,
+            "length": 3,
+            "messageText": "Cannot find name 'val'.",
+            "category": 1,
+            "code": 2304
+          },
+          {
+            "file": "./js-utils.ts",
+            "start": 12764,
+            "length": 3,
+            "messageText": "Cannot find name 'val'.",
+            "category": 1,
+            "code": 2304
+          },
+          {
+            "file": "./js-utils.ts",
+            "start": 13261,
+            "length": 4,
+            "messageText": "Parameter 'name' implicitly has an 'any' type.",
+            "category": 1,
+            "code": 7006
+          },
+          {
+            "file": "./js-utils.ts",
+            "start": 13267,
+            "length": 8,
+            "messageText": "Parameter 'storeKey' implicitly has an 'any' type.",
+            "category": 1,
+            "code": 7006
+          },
+          {
+            "file": "./js-utils.ts",
+            "start": 13277,
+            "length": 12,
+            "messageText": "Parameter 'defaultValue' implicitly has an 'any' type.",
+            "category": 1,
+            "code": 7006
+          },
+          {
+            "file": "./js-utils.ts",
+            "start": 13341,
+            "length": 4,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'name' does not exist on type 'StoreLocalStorage'."
+          },
+          {
+            "file": "./js-utils.ts",
+            "start": 13438,
+            "length": 4,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'type' does not exist on type 'StoreLocalStorage'."
+          },
+          {
+            "file": "./js-utils.ts",
+            "start": 13478,
+            "length": 4,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'type' does not exist on type 'StoreLocalStorage'."
+          },
+          {
+            "file": "./js-utils.ts",
+            "start": 13603,
+            "length": 12,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'defaultValue' does not exist on type 'StoreLocalStorage'."
+          },
+          {
+            "file": "./js-utils.ts",
+            "start": 13643,
+            "length": 5,
+            "messageText": "Parameter 'state' implicitly has an 'any' type.",
+            "category": 1,
+            "code": 7006
+          },
+          {
+            "file": "./js-utils.ts",
+            "start": 13650,
+            "length": 3,
+            "messageText": "Parameter 'val' implicitly has an 'any' type.",
+            "category": 1,
+            "code": 7006
+          },
+          {
+            "file": "./js-utils.ts",
+            "start": 13687,
+            "length": 4,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'type' does not exist on type 'StoreLocalStorage'."
+          },
+          {
+            "file": "./js-utils.ts",
+            "start": 13808,
+            "length": 4,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'name' does not exist on type 'StoreLocalStorage'."
+          },
+          {
+            "file": "./js-utils.ts",
+            "start": 13853,
+            "length": 8,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'storeKey' does not exist on type 'StoreLocalStorage'."
+          },
+          {
+            "file": "./js-utils.ts",
+            "start": 13921,
+            "length": 4,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'name' does not exist on type 'StoreLocalStorage'."
+          },
+          {
+            "file": "./js-utils.ts",
+            "start": 13949,
+            "length": 4,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'type' does not exist on type 'StoreLocalStorage'."
+          },
+          {
+            "file": "./js-utils.ts",
+            "start": 14019,
+            "length": 8,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'storeKey' does not exist on type 'StoreLocalStorage'."
+          },
+          {
+            "file": "./js-utils.ts",
+            "start": 14091,
+            "length": 8,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'storeKey' does not exist on type 'StoreLocalStorage'."
+          },
+          {
+            "file": "./js-utils.ts",
+            "start": 14132,
+            "length": 12,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'defaultValue' does not exist on type 'StoreLocalStorage'."
+          },
+          {
+            "file": "./js-utils.ts",
+            "start": 14168,
+            "length": 4,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'type' does not exist on type 'StoreLocalStorage'."
+          },
+          {
+            "file": "./js-utils.ts",
+            "start": 14203,
+            "length": 4,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'type' does not exist on type 'StoreLocalStorage'."
+          },
+          {
+            "file": "./js-utils.ts",
+            "start": 14234,
+            "length": 3,
+            "code": 2345,
+            "category": 1,
+            "messageText": {
+              "messageText": "Argument of type 'string | null' is not assignable to parameter of type 'string'.",
+              "category": 1,
+              "code": 2345,
+              "next": [
+                {
+                  "messageText": "Type 'null' is not assignable to type 'string'.",
+                  "category": 1,
+                  "code": 2322
+                }
+              ]
+            }
+          },
+          {
+            "file": "./js-utils.ts",
+            "start": 14269,
+            "length": 5,
+            "messageText": "Parameter 'state' implicitly has an 'any' type.",
+            "category": 1,
+            "code": 7006
+          },
+          {
+            "file": "./js-utils.ts",
+            "start": 14294,
+            "length": 4,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'name' does not exist on type 'StoreLocalStorage'."
+          },
+          {
+            "file": "./js-utils.ts",
+            "start": 14307,
+            "length": 12,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'defaultValue' does not exist on type 'StoreLocalStorage'."
+          },
+          {
+            "file": "./js-utils.ts",
+            "start": 14497,
+            "length": 8,
+            "code": 2339,
+            "category": 1,
+            "messageText": "Property 'storeKey' does not exist on type 'StoreLocalStorage'."
+          },
+          {
+            "file": "./js-utils.ts",
+            "start": 14531,
+            "length": 1,
+            "messageText": "Parameter 'n' implicitly has an 'any' type.",
+            "category": 1,
+            "code": 7006
+          },
+          {
+            "file": "./js-utils.ts",
+            "start": 14581,
+            "length": 6,
+            "messageText": "Experimental support for decorators is a feature that is subject to change in a future release. Set the 'experimentalDecorators' option in your 'tsconfig' or 'jsconfig' to remove this warning.",
+            "category": 1,
+            "code": 1219
+          }
+        ]
+      ],
+      "c:/users/administrator/appdata/roaming/npm/node_modules/typescript/lib/lib.es5.d.ts",
+      "c:/users/administrator/appdata/roaming/npm/node_modules/typescript/lib/lib.dom.d.ts",
+      "c:/users/administrator/appdata/roaming/npm/node_modules/typescript/lib/lib.webworker.importscripts.d.ts",
+      "c:/users/administrator/appdata/roaming/npm/node_modules/typescript/lib/lib.scripthost.d.ts"
+    ]
+  },
+  "version": "3.7.2"
+}

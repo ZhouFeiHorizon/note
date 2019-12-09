@@ -638,3 +638,31 @@ class StoreLocalStorage {
   }
 }
 
+/**
+ * 防抖
+ */
+function debounce(fn, delay = 500) {
+  let timeout = null
+  return function () {
+    if (timeout !== null) clearTimeout(timer)
+    timeout = setTimeout(fn, delay)
+  }
+}
+
+/**
+ * 节流
+ */
+// 节流
+function throttle(cb, interval = 500) {
+  let timer = null
+  return function () {
+    let context = this
+    let args = arguments
+    if (timer === null) {
+      timer = setTimeout(function () {
+        cb.apply(context, args)
+        timer = null
+      }, interval)
+    }
+  }
+}

@@ -77,18 +77,18 @@ var date = d.toLocaleString()
 var content = `${commit} ${date}  ${work}`.trim()
 
 
-var create = file => {
-  var varsPath = reslove('vue.vue')
-  fs.writeFileSync(path.join('./index.vue'), fs.readFileSync(varsPath), 'utf-8')
-}
+// var create = file => {
+//   var varsPath = reslove('vue.vue')
+//   fs.writeFileSync(path.join('./index.vue'), fs.readFileSync(varsPath), 'utf-8')
+// }
 
-create()
-// cmd.exec(`git pull`)
-//   .then(() => cmd.exec(`git add . && git commit -m "${content}"`))
-//   .then(() => cmd.exec(`git push --all`))
-//   .then(() => {
-//     console.log(styles.greenBG, 'DONE')
-//     return true
-//   })
-//   .then(() => cmd.exec(`pause`, true))
-//   .catch(() => { })
+// create()
+cmd.exec(`git pull`)
+  .then(() => cmd.exec(`git add . && git commit -m "${content}"`))
+  .then(() => cmd.exec(`git push --all`))
+  .then(() => {
+    console.log(styles.greenBG, 'DONE')
+    return true
+  })
+  .then(() => cmd.exec(`pause`, true))
+  .catch(() => { })

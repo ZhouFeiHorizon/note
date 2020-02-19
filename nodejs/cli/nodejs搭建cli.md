@@ -25,3 +25,4 @@ console.log('hello world')
 ```
 
 添加 `#!/usr/bin/env node` 或者 `#!/usr/bin/node` ，这是告诉系统，下面这个脚本，使用nodejs来执行
+

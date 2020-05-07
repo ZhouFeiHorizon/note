@@ -168,3 +168,25 @@ filter: progid:DXImageTransform.Microsoft.gradient(GradientType=1, startColorstr
 
 ```
 
+
+
+## a 标签的 target 数据
+
+a 标签的 target 数据指定一个 iframe 的name，那么点击a标签就会把iframe 的src换为 a标签的href
+
+
+
+1. 首页
+   - 区域列表获取接口， 搜索时按区域的接口
+   - 首页的职位列表是否要根据当前选择的区域进行查询
+2. 职位列表、职位详情，只有元， 差多少钱一小时和多少钱一个月没有在一起返回（目前是混合的）
+3. 预支薪水：多了合同的提交， 要增加合同一个字段
+4. 我的页面：专属客服电话是写死还是后台请求
+5. 职位详情，差微信号和手机号
+
+
+
+
+
+
+

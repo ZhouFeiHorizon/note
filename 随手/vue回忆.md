@@ -35,7 +35,7 @@ this.$emit("update:title", this.title)
 在父组件中
 
 ```html
-<div v-bind:update:title.sync="doc.title"></div>
+<div v-bind:title.sync="doc.title"></div>
 ```
 
 :title.sync="doc.title"

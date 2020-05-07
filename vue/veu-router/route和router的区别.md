@@ -17,3 +17,4 @@ $router.replace({path:'home'});//替换路由，没有历史记录
 $route为当前router跳转对象里面可以获取name、path、query、params等
 
 $router为VueRouter实例，想要导航到不同URL，则使用$router.push方法
+

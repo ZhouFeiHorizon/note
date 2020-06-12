@@ -1,22 +1,21 @@
-
-
 function zeroize(n) {
-  return Number(n) >= 10 ? n : '0' + n
+  return Number(n) >= 10 ? n : "0" + n;
 }
 
 /**
  * new Date
- * @param date 
+ * @param date
  */
 function newDate(date = new Date()) {
-  if (Object.prototype.toString.call(date) === '[object Date]') {
-    return date
+  if (Object.prototype.toString.call(date) === "[object Date]") {
+    return date;
   } else if (Number(date)) {
-    return (new Date(Number(date)))
+    return new Date(Number(date));
   } else {
     // 在ios上必须要用 YYYY/MM/DD 的格式
     // date = date.replace(new RegExp(/-/gm) ,"/");
-    return (new Date(date))
+    // 在ie浏览器中还必须补零 new Date('2020-01')可以， new Date('2020/1')不可以
+    return new Date(date);
   }
 }
 
@@ -43,9 +42,9 @@ function newDate(date = new Date()) {
   ss: 秒，补满两位，20
   s: 秒，20
 */
-function formatDate(date = new Date(), format = 'yyyy/MM/dd HH:mm 周w') {
-  date = newDate(date)
-  var y = date.getFullYear()
+function formatDate(date = new Date(), format = "yyyy/MM/dd HH:mm 周w") {
+  date = newDate(date);
+  var y = date.getFullYear();
   var obj = {
     M: date.getMonth() + 1, // 0 ~ 11
     d: date.getDate(), // 1 ~ 31
@@ -53,17 +52,34 @@ function formatDate(date = new Date(), format = 'yyyy/MM/dd HH:mm 周w') {
     h: date.getHours() % 12,
     m: date.getMinutes(), // 0 ~ 59
     s: date.getSeconds(), // 0 ~ 59
-    w: ['日', '一', '二', '三', '四', '五', '六'][date.getDay()]    // 0 ~ 6
-  }
+    w: ["日", "一", "二", "三", "四", "五", "六"][date.getDay()], // 0 ~ 6
+  };
   format = format.replace(/yy(yy)?/, function (_, v) {
-    return v ? y + '' : (y + '').slice(-2)
-  })
+    return v ? y + "" : (y + "").slice(-2);
+  });
   for (var key in obj) {
     // format = format.replace(new RegExp(`${key}(${key})?`), (_, v) => v ? zeroize(obj[key]) : obj[key])
-    var reg = new RegExp(key + '(' + key + ')?')
+    var reg = new RegExp(key + "(" + key + ")?");
     format = format.replace(reg, function (_, v) {
-      return v ? zeroize(obj[key]) : obj[key]
-    })
+      return v ? zeroize(obj[key]) : obj[key];
+    });
   }
-  return format
+  return format;
+}
+
+/**
+ * 格式化时间，转化为几分钟前，几秒钟前
+ * @param timestamp 时间戳，单位是毫秒
+ */
+function timeFormat(date) {
+  var mistiming = Math.round((Date.now() - newDate(date).getTime()) / 1000);
+  // if
+  var arrr = ["年", "个月", "星期", "天", "小时", "分钟", "秒"];
+  var arrn = [31536000, 2592000, 604800, 86400, 3600, 60, 1];
+  for (var i = 0; i < arrn.length; i++) {
+    var inm = Math.floor(mistiming / arrn[i]);
+    if (inm != 0) {
+      return inm + arrr[i] + "前";
+    }
+  }
 }

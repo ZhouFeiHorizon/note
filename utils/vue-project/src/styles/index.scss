@@ -1,0 +1,185 @@
+
+
+body {
+  height: 100%;
+  color: #575757;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif;
+}
+
+label {
+  font-weight: 700;
+}
+
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.fl{
+  float: left;
+}
+.fr{
+  float: right;
+}
+
+#app {
+  height: 100%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+a,
+a:focus,
+a:hover {
+  cursor: pointer;
+  color: inherit;
+  text-decoration: none;
+}
+
+div:focus {
+  outline: none;
+}
+
+// main-container global css
+.app-container {
+  padding: 20px;
+}
+
+/* 全局自定义class
+------------------------*/
+.clearfix {
+  &:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: ' ';
+    clear: both;
+    height: 0;
+  }
+}
+.primary-color {
+  color: #016AE0;
+}
+.danger-color {
+  color: #ce2c2c;
+}
+.chard-shadow {
+  box-shadow:0px 2px 6px 0px rgba(224,229,239,0.4);
+}
+
+.text-right {
+  text-align: right;
+}
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+/* 分页
+------------------------*/
+.el-pagination {
+  text-align: right;
+  margin: 12px 0;
+}
+.el-pagination.is-background .btn-next,
+.el-pagination.is-background .btn-prev,
+.el-pagination.is-background .el-pager li {
+  background-color: #ffffff;
+  color: #9b9b9b;
+  font-size: 12px;
+  width: 24px;
+  height: 24px;
+  line-height: 24px;
+  min-width: min-content;
+  box-sizing: border-box;
+}
+.el-pagination__jump,
+.el-pagination__sizes input,
+.el-pagination__total {
+  color: #9b9b9b;
+}
+
+/* 过滤、搜索
+------------------------*/
+.filter {
+  background: #ffffff;
+  // 搜索输入框
+  .search-row {
+    box-shadow: 0px 2px 6px 0px rgba(224, 229, 239, 0.4);
+    border-bottom: 1px solid #e0e6f0;
+    padding-left: 9px;
+    display: flex;
+    align-items: center;
+    &-media {
+      padding-right: 20px;
+      flex-shrink: 0;
+      font-size: 16px;
+    }
+  }
+  .search-input {
+    flex-shrink: 1;
+    .el-input__inner {
+      border: none;
+      height: 48px;
+      line-height: 48px;
+    }
+  }
+
+  // 下拉菜单行
+  .dropdown-row-wrap {
+    padding: 0 18px;
+    margin-bottom: 20px;
+    height: 48px;
+    box-sizing: border-box;
+    .el-dropdown {
+      color: #575757;
+    }
+    .el-divider--vertical {
+      height: 22px;
+      background-color: #d5d5d5;
+    }
+  }
+}
+
+/* table
+---------------------*/
+
+.el-table {
+  // table里面的button
+  .el-button {
+    height: 32px;
+    line-height: 32px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    font-size: 14px;
+    &.is-disabled {
+      opacity: 0.5;
+    }
+    &--info {
+      color: #171717;
+      background-color: #F3F3F3;
+      border: none;
+      padding: 0;
+      width: 88px;
+      text-align: center;
+      &:active {
+        background-color: #dcdcdc;
+      }
+    }
+  }
+}

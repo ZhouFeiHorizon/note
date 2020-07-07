@@ -259,6 +259,7 @@ function hexrgb2(sHex) {
  * >> webkitBorderImage
  */
 function camelize(str) {
+  const camelizeRE = /-(\w)/g
   str = str.replace(camelizeRE, function (_, c) {
     return c ? c.toUpperCase() : ''
   })
@@ -268,10 +269,11 @@ function camelize(str) {
 
 
 /**
- * 驼峰转下划线
+ * 驼峰命名转短横线命名
  * @param {string} str 
  */
 function hyphenate(str) {
+  const hyphenateRE = /\B([A-Z])/g
   return str.replace(hyphenateRE, '-$1').toLowerCase()
 }
 
@@ -518,6 +520,7 @@ function getUrlParam(sUrl, sKey) {
 function getUrlParams(sUrl) {
   // 普通的中文都可以用变量
   var res = {}
+  // var reg = /(?:[\?|&](\w)=([]))/
   sUrl.replace(reg, function (all, key, val) {
     res[key] = val
   })

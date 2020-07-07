@@ -45,7 +45,11 @@ function formatDate(
   date: number | string | Date = new Date(),
   format: string = "yyyy/MM/dd HH:mm 周w"
 ): string {
-  date = newDate(date);
+  var tmpDate = newDate(date);
+  // @ts-ignore
+  if (String(tmpDate) === 'Invalid Date') return date
+  date = tmpDate
+
   var y = date.getFullYear();
   var obj = {
     M: date.getMonth() + 1, // 0 ~ 11 

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <title></title>
+
+    <!-- 判断兼容性、是否支持vue -->
+    <script>
+      try {
+        Object.defineProperty({}, 'k', {})
+      } catch (e) {
+        location = './no-compat.html'
+      }
+      var DEFAULT_VERSION = 8.0
+      var ua = navigator.userAgent.toLowerCase()
+      var isIE = ua.indexOf('msie') > -1
+      var safariVersion
+      if (isIE) {
+        safariVersion = ua.match(/msie ([\d.]+)/)[1]
+      }
+      if (safariVersion <= DEFAULT_VERSION) {
+        location = './no-compat.html'
+      }
+    </script>
+  </head>
+
+  <body>
+    <noscript>
+      <strong>您的浏览器不支持脚本，或您的的浏览器禁用了脚本</strong>
+    </noscript>
+    <div id="app"></div>
+
+    <script src="<%= chunks['app'].entry %>"></script>
+    <script src="<%= chunks['chunk-vendors'].entry %>"></script>
+  </body>
+</html>

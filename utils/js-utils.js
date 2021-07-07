@@ -34,8 +34,9 @@ function isObject(obj) {
  * @param {object} obj 
  */
 function isEmptyObject(obj) {
-  if (Object.keys(obj).length === 0) return true
-  return false
+  // if (Object.keys(obj).length === 0) return true
+  // return false
+  return Object.keys(obj).length === 0
 }
 
 /**
@@ -71,13 +72,13 @@ function hasOwn(obj, key) {
  * isChainObjectDef('obj.a.b.c.d') ==> fasle
  * 
  */
-function isChainObjectDef(ctx, chainStr) {
+function isChainObjectDef(chainStr, ctx) {
   const keys = chainStr.split('.')
-  if (typeof ctx === 'string') {
-    chainStr = ctx
-    ctx = this || window
-  }
+  ctx =  ctx || this || window
   let ns = ctx[keys[0]]
+  if (!ns) {
+    return false
+  }
   for (let i = 1; i < keys.length; i++) {
     if (ns[keys[i]] === undefined) {
       return false
@@ -520,7 +521,7 @@ function getUrlParam(sUrl, sKey) {
 function getUrlParams(sUrl) {
   // 普通的中文都可以用变量
   var res = {}
-  // var reg = /(?:[\?|&](\w)=([]))/
+  var reg = /(?:[\?|&](\w)=([]))/
   sUrl.replace(reg, function (all, key, val) {
     res[key] = val
   })
@@ -713,4 +714,12 @@ function judgeValueEqual(a, b) {
   } else {
     return a === b
   }
+}
+
+/**
+ * 是否是空、
+ * @param {*} v
+ */
+export function isEmpty(v) {
+  return v === undefined || v === '' || v === null
 }

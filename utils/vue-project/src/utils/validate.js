@@ -33,6 +33,11 @@ export const landlineRE = /^(0[0-9]{2,3}\-)([2-9][0-9]{6,7})+(\-[0-9]{1,4})?$/
 export const postcodeRE = /^[1-9]\d{5}$/
 /** 传真 */
 export const faxRE = /^(\d{3,4}-)?\d{7,8}$/
+<<<<<<< HEAD
+=======
+/** 电子邮箱 */
+export const emailRE = /^[a-zA-Z0-9_-]+@[a-zA-Z0-9_-]+(\.[a-zA-Z0-9_-]+)+$/
+>>>>>>> 46a8b3d90d551efb2aadde14e8edbb679da1fcf3
 
 /**
  * 正整数
@@ -74,7 +79,13 @@ export function isPostcode(val) {
   return postcodeRE.test(val)
 }
 
-/** 传真 */
 export function isFax(val) {
   return faxRE.test(val)
+}
+/**
+ * 电子邮箱
+ * @param {*} val
+ */
+export function isEmail(val) {
+  return emailRE.test(val)
 }

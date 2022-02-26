@@ -1,5 +1,9 @@
 import React, { Component } from 'react'
+
 import { BroswerRouter as Router, Link, NavLink, Switch, Route, Redirect, withRouter } from 'reach-dom-router'
+
+// HashRouter state 传参时，刷新会丢失
+// BroswerRouter state 传参，刷新不会丢失，因为会保存在history里面，但是清楚缓存，新标签打开也会丢失
 
 // Route 相当于接口 
 // 

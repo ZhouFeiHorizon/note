@@ -21,5 +21,8 @@
 // 等价于
 <myNavLink to="/home" children="哈哈哈" />
 
-```
+<Switch>
+  <Route path="/"></Route>
+</Switch>
 
+```

@@ -38,6 +38,7 @@ n ls-remote --all 查看服务器上所有可用的版本
 ### windows下nvm的命令([]中的参数可有可无)：
 
 ```
+nvm current    					 查看当前使用的node版本
 nvm arch                         查看当前系统的位数和当前nodejs的位数
 nvm install <version> [arch]     安装制定版本的node 并且可以指定平台 version 版本号  arch 平台
 nvm list [available]         

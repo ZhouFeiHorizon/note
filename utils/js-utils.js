@@ -1,7 +1,6 @@
-
 /**
  * 是否是原生Object对象
- * @param {any} obj 
+ * @param {any} obj
  */
 function isPlainObject(obj) {
   return Object.prototype.toString.call(obj) === '[object Object]'
@@ -9,8 +8,8 @@ function isPlainObject(obj) {
 
 /**
  * Remove an item from an array
- * @param {Array<*>} arr 
- * @param {*} item 
+ * @param {Array<*>} arr
+ * @param {*} item
  */
 function remove(arr, item) {
   if (arr.length) {
@@ -23,7 +22,7 @@ function remove(arr, item) {
 
 /**
  * 判断是否是对象
- * @param {any} obj 
+ * @param {any} obj
  */
 function isObject(obj) {
   return obj !== null && typeof obj === 'object'
@@ -31,7 +30,7 @@ function isObject(obj) {
 // for...in 和 Object.keys的区别是Object.keys不会遍历原型链上的属性
 /**
  * 是否是空对象
- * @param {object} obj 
+ * @param {object} obj
  */
 function isEmptyObject(obj) {
   // if (Object.keys(obj).length === 0) return true
@@ -41,7 +40,7 @@ function isEmptyObject(obj) {
 
 /**
  * 是否是原始类型值
- * @param {*} value 
+ * @param {*} value
  */
 function isPrimitive(value) {
   return typeof value === 'string' || typeof value === 'number'
@@ -49,8 +48,8 @@ function isPrimitive(value) {
 
 /**
  * 一个对象是否拥有某个属性, 不会访问原型链上的属性
- * @param {object} obj 
- * @param {string} key 
+ * @param {object} obj
+ * @param {string} key
  */
 function hasOwn(obj, key) {
   return Object.prototype.hasOwnProperty.call(obj, key)
@@ -61,8 +60,8 @@ function hasOwn(obj, key) {
  * @param {object} ctx 可选 运行环境上下文，
  * @param {string} chainStr 链式字符串
  * @return {boolean} 是否定义
- * @example 
- *  var obj = { 
+ * @example
+ *  var obj = {
  *    a：{
  *      b: 'xxx'
  *    }
@@ -70,11 +69,11 @@ function hasOwn(obj, key) {
  * isChainObjectDef(obj.a, 'b') ==> true
  * isChainObjectDef('obj.a.b') ==> fasle
  * isChainObjectDef('obj.a.b.c.d') ==> fasle
- * 
+ *
  */
 function isChainObjectDef(chainStr, ctx) {
   const keys = chainStr.split('.')
-  ctx =  ctx || this || window
+  ctx = ctx || this || window
   let ns = ctx[keys[0]]
   if (!ns) {
     return false
@@ -88,14 +87,12 @@ function isChainObjectDef(chainStr, ctx) {
   return ns !== undefined
 }
 
-
-
 /**
- * 根据包名，在指定空间中创建对象 
+ * 根据包名，在指定空间中创建对象
  * @param {any} oNamespace 命名空间
  * @param {*} sPackage 包名
  * @param {object}
- * @example 
+ * @example
  * >> namespace({a: {test: 1, b: 2}}, 'a.b.c.d')
  * >> {a: {test: 1, b: {c: {d: {}}}}}
  */
@@ -111,26 +108,23 @@ function namespace(oNamespace, sPackage) {
   return oNamespace
 }
 
-
-
-
 function zeroize(n) {
   return Number(n) >= 10 ? n : '0' + n
 }
 
 /**
  * new Date
- * @param date 
+ * @param date
  */
 function newDate(date = new Date()) {
   if (Object.prototype.toString.call(date) === '[object Date]') {
     return date
   } else if (Number(date)) {
-    return (new Date(Number(date)))
+    return new Date(Number(date))
   } else {
     // 在ios上必须要用 YYYY/MM/DD 的格式
     // date = date.replace(new RegExp(/-/gm) ,"/");
-    return (new Date(date))
+    return new Date(date)
   }
 }
 
@@ -167,7 +161,7 @@ function formatDate(date = new Date(), format = 'yyyy/MM/dd HH:mm 周w') {
     h: date.getHours() % 12,
     m: date.getMinutes(), // 0 ~ 59
     s: date.getSeconds(), // 0 ~ 59
-    w: ['日', '一', '二', '三', '四', '五', '六'][date.getDay()]    // 0 ~ 6
+    w: ['日', '一', '二', '三', '四', '五', '六'][date.getDay()], // 0 ~ 6
   }
   format = format.replace(/yy(yy)?/, function (_, v) {
     return v ? y + '' : (y + '').slice(-2)
@@ -234,7 +228,8 @@ function hexrgb2(sHex) {
       g = sHex.slice(3, 5)
       b = sHex.slice(5, 7)
       break
-    default: return sHex
+    default:
+      return sHex
   }
   r = parseInt(r, 16)
   g = parseInt(g, 16)
@@ -249,12 +244,9 @@ function hexrgb2(sHex) {
   return 'rgb(' + r + ', ' + g + ', ' + b + ')'
 }
 
-
-
-
 /**
  * 短横线转驼峰命名
- * @param {string} str 
+ * @param {string} str
  * @example
  * >> camelize('-webkit-border--image--')
  * >> webkitBorderImage
@@ -267,11 +259,9 @@ function camelize(str) {
   return str.slice(0, 1).toLowerCase() + str.slice(1)
 }
 
-
-
 /**
  * 驼峰命名转短横线命名
- * @param {string} str 
+ * @param {string} str
  */
 function hyphenate(str) {
   const hyphenateRE = /\B([A-Z])/g
@@ -288,8 +278,8 @@ function capitalize(str) {
 
 /**
  * 两个值是否改变
- * @param oldValue 
- * @param value 
+ * @param oldValue
+ * @param value
  */
 function hasChanged(oldValue, value) {
   // (value === value || oldValue === oldValue) 排除 NaN
@@ -323,13 +313,12 @@ Array.prototype.uniq = function () {
     }
     return res
   }
-
 }
 
 function map(arr, cb, ctx) {
   ctx = ctx || window
   if (typeof cb !== 'function') {
-    throw new TypeError('cb isn\'t a function')
+    throw new TypeError("cb isn't a function")
   }
   var res = []
   for (var i = 0; i < arr.length; i++) {
@@ -348,7 +337,7 @@ Array.prototype.min = function () {
 
 /**
  * 把类数组转为数组
- * @param {*} list 
+ * @param {*} list
  * @param {number} start 开始下标
  */
 function toArray(list, start) {
@@ -361,12 +350,10 @@ function toArray(list, start) {
   return ret
 }
 
-
-
 /**
  * 将_from的属性混合（会覆盖）to对象中
  * @param {object} to 目标对象
- * @param {object} _from 
+ * @param {object} _from
  */
 function extend(to, _from) {
   for (var key in _from) {
@@ -376,7 +363,7 @@ function extend(to, _from) {
 }
 /**
  *  合并Array数组中的每一个对象到一个新的Object中
- * @param {array} arr 
+ * @param {array} arr
  */
 function toObject(arr) {
   var res = {}
@@ -409,9 +396,9 @@ function once(fn) {
 
 /**
  * 判断val的具体类型 小写
- * @param {*} val 
+ * @param {*} val
  * @returns {string} null  number undefined string object array function date regexp
- * 
+ *
  */
 function toType(val) {
   if (val === null) {
@@ -419,13 +406,11 @@ function toType(val) {
   }
   var type = typeof val
   // [object RegExp] (8, -1)
-  return type === 'object'
-    ? Object.prototype.toString.call(val).slice(8, -1).toLowerCase()
-    : type
+  return type === 'object' ? Object.prototype.toString.call(val).slice(8, -1).toLowerCase() : type
 }
 /**
  * 判断是否是一个伪数组
- * @param {*} obj 
+ * @param {*} obj
  */
 function isArrayLike(obj) {
   if (typeof obj === 'function') {
@@ -433,59 +418,49 @@ function isArrayLike(obj) {
   }
   var length = !!obj && obj.length
   var type = toType(obj)
-  return type === 'array' || length === 0 ||
-    typeof length === 'number' && length > 0 && (length - 1) in obj
+  return type === 'array' || length === 0 || (typeof length === 'number' && length > 0 && length - 1 in obj)
 }
 
 function hiddenMobile(val) {
   return (val + '').replace(/(\d{3})\d*(\d{4})/, '$1****$2')
 }
 
-
 /**
  * 将阿拉伯数字翻译成中文的大写数字
  * 数字转中文
  * @param num 数字
-*/
+ */
 function numberToChinese(num) {
-  var AA = new Array("零", "一", "二", "三", "四", "五", "六", "七", "八", "九", "十");
-  var BB = new Array("", "十", "百", "仟", "萬", "億", "点", "");
-  k = 0,
-    re = "";
+  var AA = new Array('零', '一', '二', '三', '四', '五', '六', '七', '八', '九', '十')
+  var BB = new Array('', '十', '百', '仟', '萬', '億', '点', '')
+  ;(k = 0), (re = '')
   for (var i = a[0].length - 1; i >= 0; i--) {
     switch (k) {
       case 0:
-        re = BB[7] + re;
-        break;
+        re = BB[7] + re
+        break
       case 4:
-        if (!new RegExp("0{4}//d{" + (a[0].length - i - 1) + "}$")
-          .test(a[0]))
-          re = BB[4] + re;
-        break;
+        if (!new RegExp('0{4}//d{' + (a[0].length - i - 1) + '}$').test(a[0])) re = BB[4] + re
+        break
       case 8:
-        re = BB[5] + re;
-        BB[7] = BB[5];
-        k = 0;
-        break;
+        re = BB[5] + re
+        BB[7] = BB[5]
+        k = 0
+        break
     }
-    if (k % 4 == 2 && a[0].charAt(i + 2) != 0 && a[0].charAt(i + 1) == 0)
-      re = AA[0] + re;
-    if (a[0].charAt(i) != 0)
-      re = AA[a[0].charAt(i)] + BB[k % 4] + re;
-    k++;
+    if (k % 4 == 2 && a[0].charAt(i + 2) != 0 && a[0].charAt(i + 1) == 0) re = AA[0] + re
+    if (a[0].charAt(i) != 0) re = AA[a[0].charAt(i)] + BB[k % 4] + re
+    k++
   }
 
-  if (a.length > 1) // 加上小数部分(如果有小数部分)
-  {
-    re += BB[6];
-    for (var i = 0; i < a[1].length; i++)
-      re += AA[a[1].charAt(i)];
+  if (a.length > 1) {
+    // 加上小数部分(如果有小数部分)
+    re += BB[6]
+    for (var i = 0; i < a[1].length; i++) re += AA[a[1].charAt(i)]
   }
-  if (re == '一十')
-    re = "十";
-  if (re.match(/^一/) && re.length == 3)
-    re = re.replace("一", "");
-  return re;
+  if (re == '一十') re = '十'
+  if (re.match(/^一/) && re.length == 3) re = re.replace('一', '')
+  return re
 }
 
 /**
@@ -503,11 +478,14 @@ function numberToChinese(num) {
 function getUrlParam(sUrl, sKey) {
   var res = {}
   sUrl.replace(reg, function (all, key, val) {
-    if (res[key] === undefined) { // 没有
+    if (res[key] === undefined) {
+      // 没有
       res[key] = val
-    } else if (Array.isArray(res[key])) { // 有了 
+    } else if (Array.isArray(res[key])) {
+      // 有了
       res[key].push(val)
-    } else { // 才一个
+    } else {
+      // 才一个
       res[key] = [].concat(res[key], val)
     }
   })
@@ -529,27 +507,26 @@ function getUrlParams(sUrl) {
 }
 /**
  * 去除字符串两边的空格
- * @param {string} str 
+ * @param {string} str
  */
 function trim(str) {
   if (typeof str !== 'string') {
-    throw new TypeError('str isn\'t string type')
+    throw new TypeError("str isn't string type")
   }
 }
 
 /**
  * 判断一个字符是否是中文
- * @param {string} str 
+ * @param {string} str
  * @renturn boolean
  */
 function isChaineseStr(str) {
-  var reg = /^([\u4E00-\u9FA5]|[\uFE30-\uFFA0])*$/;
+  var reg = /^([\u4E00-\u9FA5]|[\uFE30-\uFFA0])*$/
   if (reg.test(str)) {
-    return false;
+    return false
   }
-  return true;
+  return true
 }
-
 
 /*********************************************************** */
 // localStorage
@@ -568,7 +545,7 @@ function LocalStorage(name, storeKey, defaultValue, type) {
 LocalStorage.prototype.get = function get() {
   let res = localStorage.getItem(this.storeKey)
   res = res === null ? this.defaultValue : res
-  return this.type === 'boolean' ? !!res : (this.type === 'object' ? JSON.parse(res) : res)
+  return this.type === 'boolean' ? !!res : this.type === 'object' ? JSON.parse(res) : res
 }
 
 LocalStorage.prototype.set = function set() {
@@ -582,7 +559,7 @@ LocalStorage.prototype.set = function set() {
     return
   } else {
     // state[this.name] = val
-    val = this.type === 'boolean' ? (val || '') : val
+    val = this.type === 'boolean' ? val || '' : val
     localStorage.setItem(this.storeKey, val)
   }
 }
@@ -624,13 +601,13 @@ class StoreLocalStorage {
       return
     }
     state[this.name] = val
-    val = this.type === 'boolean' ? (val || '') : val
+    val = this.type === 'boolean' ? val || '' : val
     localStorage.setItem(this.storeKey, val)
   }
   get() {
     let res = localStorage.getItem(this.storeKey)
     res = res === null ? this.defaultValue : res
-    return this.type === 'boolean' ? !!res : (this.type === 'object' ? JSON.parse(res) : res)
+    return this.type === 'boolean' ? !!res : this.type === 'object' ? JSON.parse(res) : res
   }
   // 重置
   reset(state) {
@@ -651,10 +628,10 @@ class StoreLocalStorage {
 // }
 
 /*
-* 防抖
-* @param {function} fn 
-* @param {number} delay 延迟 
-*/
+ * 防抖
+ * @param {function} fn
+ * @param {number} delay 延迟
+ */
 function debounce(fn, delay = 500) {
   let timeout = null
   return function () {
@@ -670,10 +647,10 @@ function debounce(fn, delay = 500) {
 }
 
 /**
-  * 节流
-  * @param {function} fn 
-  * @param {number} interval 间隔
-  */
+ * 节流
+ * @param {function} fn
+ * @param {number} interval 间隔
+ */
 function throttle(fn, interval = 500) {
   let timer = null
   return function () {
@@ -689,7 +666,7 @@ function throttle(fn, interval = 500) {
   }
 }
 
- /** 判断两值是否相等、考虑原始值 */
+/** 判断两值是否相等、考虑原始值 */
 function judgeValueEqual(a, b) {
   if (typeof a === 'object' && typeof b === 'object') {
     // 取对象a和b的属性名
@@ -723,3 +700,103 @@ function judgeValueEqual(a, b) {
 export function isEmpty(v) {
   return v === undefined || v === '' || v === null
 }
+
+/**
+ * 深度克隆
+ * @param {*} obj
+ * @param {*} map
+ * @returns
+ */
+export function deepClone(obj, map = new Map()) {
+  if (!obj && typeof obj !== 'object') return obj
+  if (obj instanceof Date) return new Date(obj)
+  if (obj instanceof RegExp) return new RegExp(obj.source, obj.flags)
+
+  if (map.get(obj)) {
+    return map.get(obj)
+  }
+
+  const cloneObj = obj.constructor()
+
+  map.set(obj, cloneObj)
+
+  for (let key in obj) {
+    if (obj.hasOwnProperty(key)) {
+      cloneObj[key] = deepClone(obj[key], map)
+    }
+  }
+
+  return cloneObj
+}
+
+function limitRequest(requests, limit = 3) {
+  requests = requests.slice()
+  return new Promise((resolve, reject) => {
+    let count = 0
+    const len = requests.length
+    while (limit > 0) {
+      start()
+      limit--
+    }
+
+    function start() {
+      const promiseFn = requests.shift()
+
+      promiseFn?.().finally(() => {
+        count++ // 一定要通过 count 判断、不能通过 requests.length 判断是否为空，这样不对的
+        if (count === len) {
+          // 最后一个
+          resolve()
+        } else {
+          start()
+        }
+      })
+    }
+  })
+}
+
+const arr = []
+for (let value of 5) {
+  arr.push(() => fetch(`https://www.baidu.com/s?ie=UTF-8&wd=${value}`))
+}
+
+limitRequest(arr)
+
+Promise.all([]).then()
+
+Promise.myAll = function (promises) {
+  let count = 0
+  let values = []
+  return new Promise((resolve, reject) => {
+    if (!promises.length) {
+      return resolve([])
+    }
+    promises.forEach((promise, index) => {
+      promise
+        .then(value => {
+          values[index] = value
+          count++
+          if (count === promises.length) {
+            resolve(values)
+          }
+        })
+        .catch(reject)
+    })
+  })
+}
+
+function Parent(name) {
+  this.name = name
+}
+
+Parent.prototype.eat = function () {
+  console.log(this.name + '正在吃东西')
+}
+
+function Child(name, age) {
+  Parent.call(this, name)
+  this.age = age
+}
+
+Child.prototype = Object.create(Parent.prototype)
+Child.constructor = Child

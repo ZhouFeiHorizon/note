@@ -26,3 +26,144 @@
 </Switch>
 
 ```
+
+
+## react 源码
+
+element
+```ts
+// React.JSX.Element
+{
+   $$type: Symbol('react.route'),
+   key: null,
+   props: {
+        children: "这个是一个div"
+    },
+   ref: null,
+   type: 'div' | (props) => {...}
+   _owner: null,
+   _store: null,
+   _self: null,
+   _source: {}
+}
+```
+
+### createElement
+
+```js
+
+React.createElement(div, props, ...children)
+
+const RESERVED_PROPS = {
+  key: true,
+  ref: true,
+  __self: true,
+  __source: true,
+};
+
+function createElement(type, config, children) {
+  const props = {}
+ 
+  let key = null;
+  let ref = null;
+  let self = null;
+  let source = null;
+
+
+  if (config !== null) {
+
+
+    if (config.key !== unde
+      key = '' + config.key 
+    )
+    self = config.__self === undefined ? null : config.__self;
+    source = config.__source === undefined ? null : config.__source;
+
+    for (const propName in config) {
+      if (Object.hasOwnProperty.call(config, key)
+      && !RESERVED_PROPS[propName]
+      ) {
+        props[propName] = config[propName];
+      }
+    }
+  }
+
+  // 处理 children
+
+  const childLength = arguments.length - 2;
+
+  if (childLength === 1) {
+    props.children = children
+  } else if (childLength > 1) {
+    const childArray = Array(childrenLength);
+    for (let i = 0; i < childrenLength; i++) {
+      childArray[i] = arguments[i + 2];
+    }
+    props.children = childArray;
+  }
+
+  //  Resolve default props
+  if (type && type.defaultProps) {
+    const defaultProps = type.defaultProps;
+    for (const propName in defaultProps) {
+      if (props[propName] === undefined) {
+        props[propName] = defaultProps[propName];
+      }
+    }
+  }
+
+  return ReactElement(
+    type,
+    key,
+    ref,
+    self,
+    source,
+    ReactCurrentOwner.current,
+    props
+  )
+}
+
+
+function ReactElement(type, key, ref, self, source, owner, props) {
+  const element = {
+    $$type: Symbol('react.element'),
+  
+    type: type,
+    key: key,
+    ref: ref,
+    props: props,
+   _owner: owner,
+  };
+  return element;
+}
+
+
+
+```
+
+
+
+### createContext
+
+```ts
+import React, { useContext } from 'react'
+
+
+const MyContext = React.createContext()
+// 提供
+<MyContext.Provider value={123}>
+  // 消费
+  <MyContext.Consumer>
+    {
+      (value) => {
+        return <div>{value}</div>
+      }
+    }
+  </MyContext.Consumer>
+</MyContext.Provider>
+
+
+// 消费
+const value = useContext(MyContext)
+
+```
